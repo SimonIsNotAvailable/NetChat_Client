@@ -11,7 +11,7 @@ public class Calculator {
         if (y != 0) {
             return x / y;
         } else {
-            System.out.print("You can't divide by zero: ");
+            System.out.print("You can't divide by zero: "); // Математически нельзя делить на нуль, исключаем эту возможность
             return 0;
         }
     };
