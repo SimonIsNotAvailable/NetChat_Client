@@ -6,7 +6,7 @@ public class Calculator {
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
-    BinaryOperator<Integer> divide = (x, y) -> //y == 0 ? y : x / y ;
+    BinaryOperator<Integer> divide = (x, y) ->
     {
         if (y != 0) {
             return x / y;
