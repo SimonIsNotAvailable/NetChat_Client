@@ -30,18 +30,18 @@ public class ClientRegistration {
                 out.println(name);
                 serverMessage = in.readLine();
                 System.out.println(serverMessage);
-                if (serverMessage.contains("This name is occupied, please use another one:")) {
+                if (serverMessage != null && serverMessage.contains("This name is occupied, please use another one:")) {
                     name = null;
                 } else
                     break;
             }
+            return true;
         } catch (IOException e) {
             String trouble = "| Cannot connect to server |";
             System.out.println(trouble);
             logger.log(trouble, LogType.ERROR, false);
             return false;
         }
-        return true;
     }
 
     public void setLogger(Logger logger) {

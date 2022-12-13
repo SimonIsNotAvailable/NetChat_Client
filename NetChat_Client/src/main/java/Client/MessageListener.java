@@ -13,7 +13,7 @@ public class MessageListener implements Runnable{
     private BufferedReader in;
 
     public MessageListener (BufferedReader in){
-
+        this.in = in;
     }
 
     @Override
