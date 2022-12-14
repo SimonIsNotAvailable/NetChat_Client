@@ -46,4 +46,8 @@ public class Client {
         }
         return true;
     }
+
+    public void setRegisterService(ClientRegistration clientReg) {
+        this.clientReg = clientReg;
+    }
 }
