@@ -17,6 +17,7 @@ public class Client {
     public Client() {
 
     }
+
     public boolean connectToServer() {
 
         String host = Settings.getProperty("host");

@@ -23,7 +23,6 @@ public class ClientRegistrationTest {
         PrintWriter out = mock(PrintWriter.class);
         Logger logger = mock(Logger.class);
 
-        // имитируем ввод для сканера
         String input = "TEST NAME";
         InputStream inputStream = new ByteArrayInputStream(input.getBytes());
         System.setIn(inputStream);

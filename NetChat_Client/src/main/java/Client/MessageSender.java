@@ -6,13 +6,13 @@ import java.util.Scanner;
 import Logger.Logger;
 import Logger.LogType;
 
-public class MessageSender implements Runnable{
+public class MessageSender implements Runnable {
     private PrintWriter out;
     private Logger log = Logger.getInstance();
     private Scanner scanner = new Scanner(System.in);
 
     public MessageSender(PrintWriter out) {
-    this.out = out;
+        this.out = out;
     }
 
     @Override
@@ -24,9 +24,10 @@ public class MessageSender implements Runnable{
         }
         System.exit(0);
     }
-    public boolean sendMessage(String message){
+
+    public boolean sendMessage(String message) {
         out.println(message);
-        if (message.equalsIgnoreCase("/exit")){
+        if (message.equalsIgnoreCase("/exit")) {
             String byeMessage = "| You left the chat |";
             log.log(byeMessage, LogType.INFO, false);
             return false;
